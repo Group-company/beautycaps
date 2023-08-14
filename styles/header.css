@@ -11,3 +11,13 @@
   width: 80px;
   height: 80px;
 }
+
+.header .navigation ul {
+  display: flex;
+  gap: 50px;
+}
+
+.header .navigation ul li a{
+  color: var(--light);
+  text-transform: capitalize;
+}
