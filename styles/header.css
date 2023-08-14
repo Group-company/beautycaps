@@ -1,0 +1,9 @@
+.header {
+  background-color: var(--primary);
+  
+  height: 12vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
