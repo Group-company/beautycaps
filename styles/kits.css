@@ -1,0 +1,108 @@
+/* .product {
+    margin: 27%;
+}
+
+.product h1 {
+    text-align: center;
+    color: var(--gray);
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.product p {
+    color: var(--grayLight);
+    font-size: 0.9rem;
+}
+
+.box-dad {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 4rem;
+}
+
+.box-dad .box-child {
+    height: 120px;
+    width: 200px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px var(--grayLight);
+}
+
+.box-dad .box-child p {
+    text-align: center;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    padding: 1.9rem;
+    text-transform: capitalize;
+}
+
+.buy p {
+    color: var(--pink);
+} */
+
+.product {
+    margin-top: 27%;
+}
+
+.product h1 {
+    text-align: center;
+    color: var(--gray);
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.product p {
+    color: var(--grayLight);
+    font-size: 0.9rem;
+}
+
+.box-dad {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.box-dad .box-child {
+    position: relative;
+    padding: 2rem;
+    margin: 10px;
+    box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.283);
+}
+
+.box-dad .box-child .background {
+    position: absolute;
+    inset: 0;
+    z-index: -1; /* Coloca a imagem atrás do card */
+}
+
+.box-dad .box-child img {
+    position: absolute;
+    top: -20px; /* Ajusta a posição vertical da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.box-dad .box-child p {
+    text-align: center;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    padding: 1.9rem;
+    text-transform: capitalize;
+    gap: 20px;
+}
+
+.buy p {
+    color: var(--pink);
+}
+
+@media (max-width: 768px) {
+    .box-dad {
+        grid-template-columns: 100%;
+    }
+}

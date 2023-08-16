@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Nunito+Sans:wght@400;700&display=swap');
 @import url(header.css);
 @import url(home.css);
+@import url(kits.css);
 
 *{
   margin: 0;
@@ -11,7 +12,11 @@
 }
 :root{
   --primary : #F60642;
-  --light : #FFFFFF  
+  --light : #FFFFFF;  
+  --grayLight : #717171;
+  --gray : #4D4D4D;
+  --white : #f5f7fad3;
+  --pink : #f178b6;
 }
 
 .container {
