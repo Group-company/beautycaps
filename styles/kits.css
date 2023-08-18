@@ -1,0 +1,73 @@
+.product {
+    margin-top: 27%;
+}
+
+.product h1 {
+    text-align: center;
+    color: var(--gray);
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.product p {
+    color: var(--grayLight);
+    font-size: 0.9rem;
+}
+
+.box-dad {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-top: 4rem;
+}
+
+.box-dad .box-child {
+    padding: 2rem;
+    margin: 50px;
+    box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.283);
+    border-radius: 8px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.box-dad .background {
+    position: relative; /* Certifique-se de que o elemento pai também seja posicionado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-dad .background img {
+    width: 120px;
+    position: absolute;
+    top: -20px; /* Ajuste isso conforme necessário */
+    left: 50%; /* Centralize horizontalmente */
+    transform: translateX(-50%); /* Centralize horizontalmente */
+    z-index: -1;
+}
+
+.box-dad .box-child p {
+    text-align: center;
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    gap: 20px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.buy p {
+    color: var(--pink);
+}
+
+@media (max-width: 768px) {
+    .box-dad {
+        grid-template-columns: 100%;
+    }
+}
