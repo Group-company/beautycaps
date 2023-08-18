@@ -1,15 +1,9 @@
 .header {
   background-color: var(--primary);
-  
   height: 12vh;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.header .logo img {
-  width: 80px;
-  height: 80px;
 }
 
 .header .navigation ul {
@@ -20,4 +14,109 @@
 .header .navigation ul li a{
   color: var(--light);
   text-transform: capitalize;
+}
+
+.mobile-menu{
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div{
+  width: 25px;
+  height: 3px;
+  background-color: var(--light);
+  margin: 5px;
+}
+
+.navigation .nav-list img{
+  display: none;
+}
+
+.fa-xmark{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu div{
+    background-color: var(--primary);
+  }
+  *{
+    
+  }
+   .navigation .nav-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--light);
+    transform: translateX(-1000px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    z-index: 3;
+    transition: transform 0.3s ease-in;
+  }
+
+  .navigation .nav-list img{
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    display: initial;
+  }
+
+  .header .navigation ul li a{
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+
+  .nav-list li{
+    margin: left;
+    opacity: 0;
+  }
+
+  .nav-list.active{
+    transform: translateX(0);
+  }
+  
+  .nav-list.active .close-menu{
+    display: initial;
+    position: absolute;
+    top: 25px;
+    right: 34px;
+    color: var(--primary);
+    font-size: 34px;
+  }
+
+  .mobile-menu.active .close-menu {
+    display: initial;
+  }
+
+  .mobile-menu{
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 34px;
+    color: var(--light);
+    font-size: 24px;
+  }
+  @keyframes navLinkFade { 
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .nav-list:not(.active) .nav-links {
+    animation: none;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .nav-list:not(.active) {
+    transform: translateX(-100%);
+  }
 }
