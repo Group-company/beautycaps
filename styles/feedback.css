@@ -1,0 +1,21 @@
+.feedback {
+    background: f5f7fa;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text h1 {
+    color: var(--gray);
+}
+
+.text p {
+    color: var(--grayLight);
+    font-size: 0.9rem;
+}
+
+.client {
+    
+}
