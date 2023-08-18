@@ -2,6 +2,7 @@
   height: auto;
   background-color: var(--primary);
   position: relative;
+  z-index: -1;
 }
 
 .home .wave {
@@ -9,6 +10,7 @@
   width: 100%;
   top: 34rem!important;
   z-index: -1;
+  display: none;
 }
 
 .home .circulo {
@@ -64,6 +66,7 @@
     width: 100%;
     top: 22rem!important;
     z-index: -1;
+    display: initial;
   }
   
   
