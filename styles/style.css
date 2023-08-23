@@ -10,15 +10,19 @@
   font-family: Inter, sans-serif;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 :root{
   --primary : #F60642;
+  --primary200: #DF2247;
   --light : #FFFFFF;  
   --grayLight : #717171;
   --gray : #4D4D4D;
   --white : #f5f7fad3;
   --pink : #f178b6;
   --grayFeed : #f5f7fa;
+  --darkBlue : #18191F
 }
 
 .container {
@@ -28,3 +32,23 @@
   }
 }
 
+ .btn-buy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn-buy .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--light);
+  outline: none;
+  border: none;
+  background-color: var(--primary200);
+  width: 155px;
+  height: 52px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}

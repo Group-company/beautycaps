@@ -4,6 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ajuste conforme necessário */
+  /* Adicione qualquer estilo adicional que você desejar */
+  background-color: var(--primary); /* Exemplo de cor de fundo */
+  transition: all 0.3s ease; /* Adicione esta linha para a transição suave */
+
+}
+.fixed-header-animation {
+  box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.089); /* Exemplo de sombra diferente */
+  /* Adicione outros estilos desejados */
+}
+.header .logo img {
+  width: 80px;
+  height: 80px;
 }
 
 .header .navigation ul {
@@ -37,14 +57,15 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+    height: auto;
+  }
   .mobile-menu div{
     background-color: var(--primary);
   }
-  *{
-    
-  }
    .navigation .nav-list {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100vw;
@@ -55,15 +76,21 @@
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    z-index: 3;
+    z-index: 99;
     transition: transform 0.3s ease-in;
   }
+  .navigation {
+    display: block;
+  }
+
 
   .navigation .nav-list img{
     position: absolute;
     top: 25px;
     left: 34px;
     display: initial;
+    transform: translateY(18px);
+    width: 80px;
   }
 
   .header .navigation ul li a{
@@ -84,7 +111,7 @@
     display: initial;
     position: absolute;
     top: 25px;
-    right: 34px;
+    right: 24px;
     color: var(--primary);
     font-size: 34px;
   }
@@ -96,6 +123,7 @@
   .mobile-menu{
     position: absolute;
     display: block;
+    z-index: 299;
     top: 25px;
     right: 34px;
     color: var(--light);
@@ -117,6 +145,6 @@
     transform: translateX(0);
   }
   .nav-list:not(.active) {
-    transform: translateX(-100%);
+    transform: translateX(-1000px);
   }
 }
