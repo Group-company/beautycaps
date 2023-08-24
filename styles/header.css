@@ -16,6 +16,7 @@
   background-color: var(--primary); /* Exemplo de cor de fundo */
   transition: all 0.3s ease; /* Adicione esta linha para a transição suave */
 
+
 }
 .fixed-header-animation {
   box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.089); /* Exemplo de sombra diferente */
@@ -111,7 +112,7 @@
     display: initial;
     position: absolute;
     top: 25px;
-    right: 24px;
+    right: 14px;
     color: var(--primary);
     font-size: 34px;
   }
@@ -148,3 +149,4 @@
     transform: translateX(-1000px);
   }
 }
+
