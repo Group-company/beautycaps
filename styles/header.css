@@ -53,8 +53,9 @@
   display: none;
 }
 
-.fa-xmark{
+.close-menu{
   display: none;
+
 }
 
 @media (max-width: 768px) {
@@ -87,8 +88,8 @@
 
   .navigation .nav-list img{
     position: absolute;
-    top: 25px;
-    left: 34px;
+    top: 12px;
+    left: 24px;
     display: initial;
     transform: translateY(18px);
     width: 80px;
@@ -107,19 +108,18 @@
   .nav-list.active{
     transform: translateX(0);
   }
+
   
-  .nav-list.active .close-menu{
+  .nav-list.active  .close-menu{
     display: initial;
     position: absolute;
-    top: 25px;
-    right: 14px;
-    color: var(--primary);
+    top:28px;
+    right:24px;
     font-size: 34px;
+    color:var(--primary);
+    z-index: 199;
   }
 
-  .mobile-menu.active .close-menu {
-    display: initial;
-  }
 
   .mobile-menu{
     position: absolute;
