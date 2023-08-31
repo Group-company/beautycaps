@@ -39,7 +39,6 @@
 
 .mobile-menu{
   cursor: pointer;
-  display: none;
 }
 
 .mobile-menu div{
@@ -150,3 +149,9 @@
   }
 }
 
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none!important; /* Oculta o menu mobile em telas maiores */
+  }
+}

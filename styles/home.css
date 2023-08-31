@@ -2,7 +2,6 @@
   height: auto;
   background-color: var(--primary);
   position: relative;
-  z-index: -1;
   padding-top: 12vh;
 
 }
@@ -49,6 +48,9 @@
   height: 42px;
   border-radius: 4px;
   font-weight: bold;
+  position: relative;
+  z-index: 999999 ;
+  cursor: pointer;
 }
 
 .home .home-content .capsulas {

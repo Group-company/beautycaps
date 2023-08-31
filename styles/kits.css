@@ -42,6 +42,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .box-dad .background img {

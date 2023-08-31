@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Caps</title>
-    <script src="js/responsive-menu.js"></script>
+    <script defer src="js/index.js"></script>
+    <script defer  src="js/responsive-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
@@ -53,7 +54,7 @@
             Beauty caps by : <br />
             Marshall caps
           </h1>
-          <button>Comprar</button>
+          <button onclick="redirectToBeautyCapsProduct()">Comprar</button>
         </div>
         <div>
           <img
@@ -67,7 +68,7 @@
       <img src="assets/svg/wave.svg" class="wave" alt="Wave" />
       <img src="assets/svg/circulo.svg" class="circulo" alt="Circulo" />
     </section>
-    <section class="kits container">
+    <section class="kits container" id="kits">
       <h1>kits promocionais</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
@@ -75,7 +76,7 @@
         vero ipsa fuga vitae laboriosam obcaecati unde inventore quidem labore
         nulla!
       </p>
-      <section class="box-dad" id="kits">
+      <section class="box-dad" >
         <div class="background">
           <img src="./assets/img/capsulas.png" alt="" />
           <div class="box-child">
@@ -170,7 +171,7 @@
       </div>
     </section>
     <div class="btn-buy">
-      <button class="btn">
+      <button class="btn" onclick="redirectToBeautyCapsProduct()">
         <p>Comprar</p>
         <img src="assets/svg/arrow-right.svg" alt="" />
       </button>

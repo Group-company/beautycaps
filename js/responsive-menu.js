@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.addEventListener("click", handleClick);
   }
 
+
   closeMenu.addEventListener("click", () => {
     closeMobileMenu();
   });
