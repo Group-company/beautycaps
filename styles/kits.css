@@ -10,6 +10,10 @@
     
 }
 
+.kits .copy {
+    font-size: 1.6rem;
+}
+
 .kits p {
     color: var(--grayLight);
     font-size: 0.9rem;
@@ -46,7 +50,7 @@
 }
 
 .box-dad .background img {
-    width: 120px;
+    width: 280px;
     position: absolute;
     top: -20px; /* Ajuste isso conforme necessário */
     left: 50%; /* Centralize horizontalmente */
