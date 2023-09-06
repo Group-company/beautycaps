@@ -52,7 +52,7 @@
 .box-dad .background img {
     width: 280px;
     position: absolute;
-    top: -20px; /* Ajuste isso conforme necessário */
+    top: -55px; /* Ajuste isso conforme necessário */
     left: 50%; /* Centralize horizontalmente */
     transform: translateX(-50%); /* Centralize horizontalmente */
     z-index: -1;
@@ -64,7 +64,9 @@
 }
 .box-dad .box-child .description {
     text-align: center;
-
+    padding-top: 20px;
+    position: relative;
+    top: 56px;
 }
 
 .buy {
@@ -97,6 +99,13 @@
     .box-dad .box-child{
         padding: 2rem!important;
         width: 100%;
+    }
+    .box-dad .background img{
+        top: -120px;
+    }
+    .box-dad p.description{
+        text-align: center;
+       
     }
 }
 
