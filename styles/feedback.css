@@ -5,7 +5,13 @@
     margin-top: 5rem;
 }
 
+.feedback .texts {
+    width: 55%;
+}
 
+.feedback .number img {
+    width: 60px;
+}
 
 .feedback .texts .title{
     color: var(--gray);
@@ -43,6 +49,10 @@
     }
     .feedback .texts {
         margin-bottom: 2rem;
+        width: 100%;
+    }
+    .feedback .number {
+        align-items: center;
     }
 }
 

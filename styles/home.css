@@ -2,7 +2,6 @@
   height: auto;
   background-color: var(--primary);
   position: relative;
-  padding-top: 12vh;
 
 }
 
@@ -36,6 +35,10 @@
   color: var(--light);
     margin: 0 auto;
 }
+.home .home-content h1 span{
+  font-size: 1.2em!important;
+}
+
 
 .home .home-content button {
   background-color: var(--light);
@@ -60,9 +63,16 @@
   z-index: 1;
   margin-top: 20px;
 }
+.home .home-content h1 span {
+    font-size: 1em;
+}
+
 
 /* Media query para telas maiores */
 @media (min-width: 768px) {
+  .home {
+    padding-top: 12vh;
+  }
   .home .circulo {
     display: initial;
   }
@@ -90,5 +100,8 @@
   font-size: 44px;
 
   }
-  
+
+  .home .home-content h1 span {
+    font-size: 1.4em;
+}
 }
